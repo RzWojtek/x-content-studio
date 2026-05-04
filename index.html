@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>X Content Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body>
+  <div id="app">
+    <header class="app-header">
+      <div class="header-inner">
+        <div class="logo">
+          <span class="logo-icon">✦</span>
+          <span class="logo-text">X Content Studio</span>
+        </div>
+        <nav class="tab-nav">
+          <button class="tab-btn active" data-tab="composer">
+            <span class="tab-icon">⚡</span>
+            Composer
+          </button>
+          <button class="tab-btn" data-tab="scheduler">
+            <span class="tab-icon">📅</span>
+            Scheduler
+          </button>
+          <button class="tab-btn" data-tab="analytics">
+            <span class="tab-icon">📊</span>
+            Analytics
+          </button>
+          <button class="tab-btn" data-tab="airdrop">
+            <span class="tab-icon">🪂</span>
+            Airdrop Radar
+          </button>
+        </nav>
+        <div class="ai-status">
+          <span class="ai-dot" id="aiDot"></span>
+          <span class="ai-label" id="aiLabel">AI ready</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="tab-content">
+      <div id="tab-composer" class="tab-panel active"></div>
+      <div id="tab-scheduler" class="tab-panel"></div>
+      <div id="tab-analytics" class="tab-panel"></div>
+      <div id="tab-airdrop" class="tab-panel"></div>
+    </main>
+  </div>
+
+  <div id="toast" class="toast"></div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
